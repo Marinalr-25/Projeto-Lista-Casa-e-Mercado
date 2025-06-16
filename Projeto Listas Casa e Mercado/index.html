@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/casa.png" type="image/png" />
+    <title>Lista de compras</title>
+  </head>
+  <body>
+    <main>
+      <section class="listaMercado ativo">
+        <div class="listaMercado__separacao">
+          <div class="listaMercado__topo">
+            <h2>Lista Supermercado</h2>
+            <div>
+              <img
+                data-origem="mercado"
+                class="adicionarItem"
+                src="img/botao-adicionar.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="listaMercado__sakura"
+                src="img/Sakura.png"
+                alt="sakura"
+              />
+            </div>
+          </div>
+
+          <div class="mercado__itens">
+            <!-- <div class="item">
+              <div class="nomeItem">Abacaxi</div>
+              <div class="qtdEIcones">
+              <div class="qtdItem">1</div>
+                <div class="icones__editDelete">
+                  <img class="editarItem" src="img/editar.png" alt="editar" />
+                  <img class="excluirItem" src="img/excluir.png" alt="excluir" />
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="espaco"></div>
+        </div>
+      </section>
+
+      <section class="listaItem">
+        <div class="separacao">
+          <div class="topo">
+            <h2>Lista de itens em casa</h2>
+            <div>
+              <img
+                data-origem="casa"
+                class="adicionarItem"
+                src="img/botao-adicionar.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img class="sakura" src="img/Sakura.png" alt="sakura" />
+            </div>
+          </div>
+          <div class="casa__itens">
+            <!-- <div class="item">
+              <div class="nomeItem">Abacaxi</div>
+              <div class="qtdEIcones">
+              <div class="qtdItem">1</div>
+                <div class="icones__editDelete">
+                  <img class="editarItem" src="img/editar.png" alt="editar" />
+                  <img class="excluirItem" src="img/excluir.png" alt="excluir" />
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="popUpTutorial">
+      <div class="bottomFooter">
+        <div class="box1">
+          Aqui vc adiciona itens ao seu carrinho que deseja
+          <b> comprar no supermercado </b>
+        </div>
+        <div class="proximo1">Próximo</div>
+        <div class="proximo2">Ok</div>
+      </div>
+    </div>
+
+    <div class="black"></div>
+
+    <!-- footer -->
+    <footer class="navegacao">
+      <div class="botoes">
+        <div class="footerSupermercado selecionado">
+          <img class="imgCarrinho" src="img/carrinho2.png" alt="carrinho" />
+        </div>
+        <div class="footerListaItens">
+          <img
+            class="imgPrancheta"
+            src="img/listaItensNaoSelecionado.png"
+            alt="carrinho"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Adicionar -->
+    <div class="popupAdicionar">
+      <div>
+        <img
+          class="popupAdicionar__fechar"
+          src="./img/fechar.png"
+          alt="fechar"
+        />
+      </div>
+      <div class="popupAdicionar__nomeEqtd">
+        <div>
+          <label for="nomeItemForm">Nome</label>
+          <input
+            type="text"
+            name="nomeItemForm"
+            class="popupAdicionar__nomeItemForm"
+            autocomplete="off"
+          />
+        </div>
+        <div>
+          <label for="qtdItemForm">Quantidade</label>
+          <input
+            type="text"
+            name="qtdItemForm"
+            class="popupAdicionar__qtdItemForm"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+      <button class="popupAdicionar__botaoAdicionar" type="submit">
+        Adicionar
+      </button>
+    </div>
+
+    <!-- editar -->
+    <div class="popupEditar">
+      <div>
+        <img class="popupEditar__fechar" src="./img/fechar.png" alt="fechar" />
+      </div>
+      <div class="popupEditar__nomeEqtd">
+        <div class="popupEditar__nome">
+          <label for="nomeItemFormEdit">Nome</label>
+          <input
+            type="text"
+            name="nomeItemFormEdit"
+            class="popupEditar__nomeItemFormedit nomeItemForm"
+          />
+        </div>
+        <div class="popupEditar__qtd">
+          <label for="qtdItemForm">Quantidade</label>
+          <input
+            type="text"
+            name="qtdItemForm"
+            class="popupEditar__qtdItemFormedit qtdItemForm"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+      <button class="popupEditar__botaoEditar" type="submit">Editar</button>
+    </div>
+
+    <!-- excluir -->
+    <div class="popUpExcluir">
+      <h2 class="popUpExcluir__titulo">Deseja mesmo excluir?</h2>
+
+      <div class="popUpExcluir__itens">
+        <div class="popUpExcluir__itens--nome"></div>
+        <div class="popUpExcluir__itens--qtd"></div>
+      </div>
+
+      <div class="popUpExcluir__botoes">
+        <button class="popUpExcluir__botao popUpExcluir__botao--sim">
+          Sim
+        </button>
+        <button class="popUpExcluir__botao popUpExcluir__botao--nao">
+          Não
+        </button>
+      </div>
+    </div>
+
+    <!-- popUp>480 -->
+    <div class="blackPopUp480">
+      <div class="popUp480">
+        <h2 class="popUp480__titulo">
+          O width do site está configurado apenas para 480px
+        </h2>
+        <p class="popUp480__paragrafo">
+          caso esteja vendo em uma tela superior a 480px, ele ficará
+          centralizado e você pode interagir com ele normalmente
+        </p>
+        <button class="popUp480__fechar">OK</button>
+
+        <div class="popUp480__naoMostrar">
+          <input type="checkbox" name="naoMostrarNovamente" />
+          Não mostrar novamente
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
